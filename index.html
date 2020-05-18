@@ -1,0 +1,51 @@
+---
+layout: default
+title: Home
+---
+<main>
+    <section>
+        <header>Hayden McAfee</header>
+        <p>Hello, I'm Hayden!</p>
+        <p>I love building all sorts of things, but I mainly create software.</p>
+        <p>Currently I am a Software Engineer working on Windows Devices at Microsoft.</p>
+        <p>In my spare time I tend to work on all sorts of side projects.</p>
+    </section>
+
+    <section>
+        <header>Projects</header>
+        <ul>
+            {% for project in site.projects %}
+            <li>
+                <a href="{{ project.url }}">{{ project.title }}</a>
+            </li>
+            {% endfor %}
+        </ul>
+    </section>
+
+    <section>
+        <header>Work</header>
+        <ul>
+            {% for work in site.work reversed %}
+            <li>
+                <div class="team">{{ work.team }}</div>
+                <div class="title">{{ work.title }} at {{ work.company }}</div>
+                <div class="time">{{ work.start_year }}—{{ work.end_year }}</div>
+                <p>{{ work.description }}</p>
+                <a href="{{ work.url }}">read more</a>
+            </li>
+            {% endfor %}
+        </ul>
+    </section>
+
+    <section>
+        <header>Posts</header>
+        <ul>
+            {% for post in site.posts %}
+              <li>
+                <a href="{{ post.url }}">{{ post.title }}</a>
+                <p>{{ post.excerpt }}</p>
+              </li>
+            {% endfor %}
+        </ul>
+    </section>
+</main>
