@@ -1,7 +1,19 @@
+permalink: /posts/:year-:month-:day-:title:output_ext
 collections:
   projects:
     output: true
-    permalink: /:collection/:name
+    permalink: /:collection/:name:output_ext
   work:
     output: true
-    permalink: /:collection/:name
+    permalink: /:collection/:name:output_ext
+defaults:
+  - scope:
+      path: ""
+      type: "projects"
+    values:
+      layout: "detail"
+  - scope:
+      path: ""
+      type: "work"
+    values:
+      layout: "detail"

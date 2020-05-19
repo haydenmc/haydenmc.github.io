@@ -8,15 +8,26 @@ title: Home
         <p>Hello, I'm Hayden!</p>
         <p>I love building all sorts of things, but I mainly create software.</p>
         <p>Currently I am a Software Engineer working on Windows Devices at Microsoft.</p>
-        <p>In my spare time I tend to work on all sorts of side projects.</p>
+        <p>In my spare time I tend to work on many different side projects.</p>
     </section>
 
     <section>
         <header>Projects</header>
         <ul>
-            {% for project in site.projects %}
+            {% for project in site.projects reversed %}
             <li>
-                <a href="{{ project.url }}">{{ project.title }}</a>
+                <header>
+                    {% if project.icon %}
+                        {% include {{ project.icon | prepend: 'svg/' }} %}
+                    {% endif %}
+                    <div class="text">
+                        <div class="team">{{ project.title }}</div>
+                        <div class="title">{{ project.subtitle }}</div>
+                        <div class="time">{{ project.year }}</div>
+                    </div>
+                </header>
+                <p>{{ project.description }}</p>
+                <a href="{{ project.url }}">more</a>
             </li>
             {% endfor %}
         </ul>
@@ -27,11 +38,18 @@ title: Home
         <ul>
             {% for work in site.work reversed %}
             <li>
-                <div class="team">{{ work.team }}</div>
-                <div class="title">{{ work.title }} at {{ work.company }}</div>
-                <div class="time">{{ work.start_year }}—{{ work.end_year }}</div>
+                <header>
+                    {% if work.icon %}
+                        {% include {{ work.icon | prepend: 'svg/' }} %}
+                    {% endif %}
+                    <div class="text">
+                        <div class="team">{{ work.team }}</div>
+                        <div class="title">{{ work.title }} at {{ work.company }}</div>
+                        <div class="time">{{ work.start_year }}—{{ work.end_year }}</div>
+                    </div>
+                </header>
                 <p>{{ work.description }}</p>
-                <a href="{{ work.url }}">read more</a>
+                <a href="{{ work.url }}">more</a>
             </li>
             {% endfor %}
         </ul>
