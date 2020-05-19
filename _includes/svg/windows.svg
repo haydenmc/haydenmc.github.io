@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   id="svg7429"
+   version="1.1"
+   viewBox="0 0 64 64"
+   height="64"
+   width="64">
+  <path
+     style="fill:var(--foreground-color);"
+     id="path6861"
+     d="M 12.901978,18.305426 28.521665,16.161547 V 31.256205 H 12.901978 m 17.501051,-15.400927 20.694992,-3.01893 v 18.2886 H 30.403029 m -17.501051,1.723853 h 15.619687 v 15.13841 L 12.901978,45.79958 M 30.403029,33.050063 H 51.098021 V 51.163652 L 30.403029,48.232226" />
+</svg>
