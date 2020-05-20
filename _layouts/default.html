@@ -1,9 +1,16 @@
 <!DOCTYPE html>
+<!-- 👋 -->
 <html>
     <head>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Hayden McAfee</title>
+        <title>
+            {% if page.title %}
+                {{ page.title }}
+            {% else %}
+                Hayden McAfee
+            {% endif %}
+        </title>
         <link rel="stylesheet" href="/assets/css/styles.css" />
     </head>
     <body>

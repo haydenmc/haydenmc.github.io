@@ -1,6 +1,5 @@
 ---
 title: Enabling Remote Access of IIS Express
-layout: post
 categories: [notes]
 ---
 For some of my web projects, I need to test against other devices (phones, tablets, Xboxes, etc.). By default, IIS Express launched by Visual Studio only allows local access to the running web server. Thankfully, I found this Stackoverflow post that explains how to work around this.
