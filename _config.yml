@@ -17,3 +17,8 @@ defaults:
       type: "work"
     values:
       layout: "detail"
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
