@@ -1,0 +1,19 @@
+---
+layout: default
+---
+<main>
+    <header>
+        <h2><a href="{% link index.html %}">Hayden/</a></h2>
+        <h1>Projects</h1>
+    </header>
+    {% assign sorted_projects = site.projects | sort: 'year' | reverse %}
+    {% for project in sorted_projects %}
+        <article>
+            <header>
+                <h1><a href="{{ project.url }}">{{ project.title }}</a></h1>
+                <time>{{ project.year }}</time>
+            </header>
+            <p>{{ project.description }}</p>
+        </article>
+    {% endfor %}
+</main>

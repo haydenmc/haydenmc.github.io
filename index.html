@@ -13,51 +13,56 @@ layout: default
     <section>
         <header>Projects</header>
         <ul>
-            {% for project in site.projects reversed %}
+            {% assign sorted_projects = site.projects | sort: 'year' | reverse %}
+            {% for project in sorted_projects limit: 3 %}
             <li>
                 <header>
                     {% if project.icon %}
                         {% include {{ project.icon | prepend: 'svg/' }} %}
                     {% endif %}
                     <div class="text">
-                        <div class="team">{{ project.title }}</div>
+                        <div class="team"><a href="{{ project.url }}">{{ project.title }}</a></div>
                         <div class="title">{{ project.subtitle }}</div>
                         <div class="time">{{ project.year }}</div>
                     </div>
                 </header>
                 <p>{{ project.description }}</p>
-                <a href="{{ project.url }}">more</a>
             </li>
             {% endfor %}
         </ul>
+        {% if site.projects.size > 3 %}
+            <a href="{% link projects.html %}">all projects</a>
+        {% endif %}
     </section>
 
     <section>
         <header>Work</header>
         <ul>
-            {% for work in site.work reversed %}
+            {% for work in site.work reversed limit: 3 %}
             <li>
                 <header>
                     {% if work.icon %}
                         {% include {{ work.icon | prepend: 'svg/' }} %}
                     {% endif %}
                     <div class="text">
-                        <div class="team">{{ work.team }}</div>
+                        <div class="team"><a href="{{ work.url }}">{{ work.team }}</a></div>
                         <div class="title">{{ work.title }} at {{ work.company }}</div>
                         <div class="time">{{ work.start_year }}—{{ work.end_year }}</div>
                     </div>
                 </header>
                 <p>{{ work.description }}</p>
-                <a href="{{ work.url }}">more</a>
             </li>
             {% endfor %}
         </ul>
+        {% if site.work.size > 3 %}
+            <a href="{% link work.html %}">all work</a>
+        {% endif %}
     </section>
 
     <section>
         <header>Posts</header>
         <ul>
-            {% for post in site.posts %}
+            {% for post in site.posts limit: 3 %}
                 <li>
                     <a href="{{ post.url }}">{{ post.title }}</a>
                     <time>{{ post.date | date: "%Y-%m-%d" }}</time>
@@ -65,5 +70,8 @@ layout: default
                 </li>
             {% endfor %}
         </ul>
+        {% if site.posts.size > 3 %}
+            <a href="{% link posts.html %}">all posts</a>
+        {% endif %}
     </section>
 </main>
