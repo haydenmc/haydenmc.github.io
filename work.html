@@ -1,0 +1,19 @@
+---
+layout: default
+---
+<main>
+    <header>
+        <h2><a href="{% link index.html %}">Hayden/</a></h2>
+        <h1>Work</h1>
+    </header>
+    {% assign sorted_work = site.work | sort: 'year' | reverse %}
+    {% for work in sorted_work %}
+        <article>
+            <header>
+                <h1><a href="{{ work.url }}">{{ work.title }}</a></h1>
+                <time>{{ work.year }}</time>
+            </header>
+            {{ work.description }}
+        </article>
+    {% endfor %}
+</main>

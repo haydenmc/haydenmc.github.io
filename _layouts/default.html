@@ -12,6 +12,18 @@
             {% endif %}
         </title>
         <link rel="stylesheet" href="/assets/css/styles.css" />
+        <script type="text/javascript">
+            // Fun little function to update accent color throughout the day
+            function updateAccentHue()
+            {
+                var currentDate = new Date();
+                var totalMinutes = (currentDate.getHours() * 60) + currentDate.getMinutes();
+                var dayElapsed = totalMinutes / (24 * 60);
+                document.documentElement.style.setProperty("--accent-hue", 360 * dayElapsed);
+            }
+            updateAccentHue();
+            setInterval(updateAccentHue, (1000 * 60 * 10));
+        </script>
     </head>
     <body>
         {{ content }}
