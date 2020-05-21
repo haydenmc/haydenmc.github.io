@@ -18,7 +18,7 @@
             function updateAccentHue()
             {
                 var currentDate = new Date();
-                var totalMinutes = (currentDate.getHours() * 60) + currentDate.getMinutes();
+                var totalMinutes = (currentDate.getUTCHours() * 60) + currentDate.getUTCMinutes();
                 var dayElapsed = totalMinutes / (24 * 60);
                 document.documentElement.style.setProperty("--accent-hue", 360 * dayElapsed);
             }
