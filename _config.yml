@@ -11,12 +11,12 @@ defaults:
       path: ""
       type: "projects"
     values:
-      layout: "detail"
+      layout: "project"
   - scope:
       path: ""
       type: "work"
     values:
-      layout: "detail"
+      layout: "work"
   - scope:
       path: ""
       type: "posts"
