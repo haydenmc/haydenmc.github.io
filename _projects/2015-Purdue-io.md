@@ -7,7 +7,7 @@ icon: purdue-io.svg
 ---
 [Purdue.io](https://purdue.io){:target="_blank"} was my Senior Design project at Purdue University.
 
-It provides an open API of all of the Purdue University course data, and a few
+It provides an open API for all of the Purdue University course data, and a few
 extra APIs for things like registering an authenticated user for classes.
 
 On top of that it has a pretty nifty demo UI to showcase how easy it is to access
