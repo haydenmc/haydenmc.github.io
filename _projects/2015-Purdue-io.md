@@ -84,3 +84,8 @@ for things like registering for classes.
 In order to demonstrate just how Purdue.io could be used to provide better
 registration experiences, a  [quick web browser front-end](https://purdue.io) was
 hacked together over a couple of days.
+
+## Sources
+
+1. [Purdue.io API](https://github.com/Purdue-io/PurdueApi)
+2. [Purdue.io Front-End](https://github.com/Purdue-io/WebApp)
