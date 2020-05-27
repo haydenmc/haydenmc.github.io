@@ -1,14 +1,25 @@
 @import "fonts.scss";
 
-// DARK THEME (default)
-// @media (prefers-color-scheme: dark), (prefers-color-scheme:no-preference) {
+@keyframes page-out {
+    to {
+        opacity: 0;
+    }
+}
+
+@keyframes page-in {
+    from {
+        opacity: 0;
+    }
+}
+
+// Declare dark theme first, just in case browser doesn't support
+// prefers-color-scheme media query
 :root {
     --background-color: rgba(8, 8, 8, 1);
     --foreground-color: rgba(255, 255, 255, 1);
     --accent-hue: 200;
     --accent-color: hsl(var(--accent-hue), 100%, 60%);
 }
-// }
 
 // LIGHT THEME
 @media (prefers-color-scheme: light) {
@@ -16,6 +27,16 @@
         --background-color: rgba(255, 255, 255, 1);
         --foreground-color: rgba(8, 8, 8, 1);
         --accent-color: hsl(var(--accent-hue), 100%, 35%);
+    }
+}
+
+// DARK THEME (default)
+@media (prefers-color-scheme: dark), (prefers-color-scheme:no-preference) {
+    :root {
+        --background-color: rgba(8, 8, 8, 1);
+        --foreground-color: rgba(255, 255, 255, 1);
+        --accent-hue: 200;
+        --accent-color: hsl(var(--accent-hue), 100%, 60%);
     }
 }
 
@@ -57,6 +78,20 @@ pre {
 
 code {
     font-family: 'Cascadia Code', monospace;
+}
+
+body.out {
+    animation-name: page-out;
+    animation-duration: 200ms;
+    animation-timing-function: cubic-bezier(0.550, 0.055, 0.675, 0.190); /* easeInCubic */
+    animation-fill-mode: forwards;
+}
+
+body.in {
+    animation-name: page-in;
+    animation-duration: 200ms;
+    animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000); /* easeOutCubic */
+    animation-fill-mode: forwards;
 }
 
 body {
