@@ -50,14 +50,14 @@ img {
     width: 100%;
     height: auto;
     max-height: 640px;
-    object-fit: contain;
+    object-fit: scale-down;
 }
 
 video {
     width: 100%;
     height: auto;
     max-height: 640px;
-    object-fit: contain;
+    object-fit: scale-down;
 }
 
 time {
