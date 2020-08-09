@@ -208,9 +208,30 @@ Where `8004` is the UDP port on the current ingest server the client should send
 | `AudioIngestSSRC: %d\r\n\r\n` | n/a | `%d`: RTP audio synchronization source. Currently set to `channelId`, where `channelId` is the channel ID from the streaming token. |
 | `.\r\n\r\n` | `200. Use UDP port %d\n` | `%d`: UDP port to connect to for media stream. | 
 
+#### Ping Requests
 
-_Under construction_
+The FTL client SDK will send a ping request to the service every 5 seconds and will expect a response, otherwise it will time out and disconnect.
+
+| Client Request | Server Response | Parameters |
+| :--------------| :-------------- | :--------- |
+| `PING\r\n\r\n` | `201\n` | N/A |
 
 ### FTL Media Protocol
 
+Once the handshake has been completed over the control connection as outlined above, the client can begin sending media data to the service in the form of RTP packets transmitted via UDP to the port specified by the control connection above.
+
+The protocol used for the media connection is very, very similar to the RTP protocol, with a couple small but key differences. See the RTP RFC [here](https://tools.ietf.org/html/rfc3550#section-3).
+
+In essence, RTP specifies a packet format with a standard header that is transmitted at the beginning of each packet followed by the payload data. The standard header describes the context and type of the payload data that follows. For details on the header, see [section 5.1 in the RTP RFC](https://tools.ietf.org/html/rfc3550#section-5.1).
+
+Of the parameters defined in the RTP header, there is a `payload type` field meant to indicate the type of payload that follows the RTP header data. The RTP spec [forbids](https://tools.ietf.org/html/rfc3550#section-5.2) multiplexing media of different types in the same stream, recommending a unique port for each stream. FTL ignores this requirement, and sends both audio and video on the same port, distinguishing them by the `payload type` header field (`96` for video, `97` for audio).
+
+FTL supports video in VP8 and H264 formats (as negotiated in the control handshake), and audio in Opus format.
+
+#### RTCP Packets
+
 _Under construction_
+
+#### Security Considerations
+
+_TODO: Talk about how to avoid attacks on the media connection..._
