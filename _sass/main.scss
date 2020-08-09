@@ -19,6 +19,7 @@
     --foreground-color: rgba(255, 255, 255, 1);
     --accent-hue: 200;
     --accent-color: hsl(var(--accent-hue), 100%, 60%);
+    --table-padding: 16px;
 }
 
 // LIGHT THEME
@@ -203,6 +204,22 @@ body {
             {
                 margin-bottom: 32px;
             }
+        }
+    }
+}
+
+table {
+    & > thead > tr, & > tbody > tr {
+        th:first-child, td:first-child {
+            padding: var(--table-padding) var(--table-padding) var(--table-padding) 0;
+        }
+
+        th:last-child, td:last-child {
+            padding: var(--table-padding) 0 var(--table-padding) var(--table-padding);
+        }
+
+        th:not(:first-child):not(:last-child), td:not(:first-child):not(:last-child) {
+            padding: var(--table-padding);
         }
     }
 }
