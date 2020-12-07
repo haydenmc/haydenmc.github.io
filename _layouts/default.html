@@ -4,7 +4,7 @@
     <head>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="description" content="Hayden McAfee's website, with information about Hayden and his work.">
+        <meta name="description" content="{% if page.description %}{{page.description | escape}}{% elsif page.excerpt %}{{page.excerpt | strip_html | escape}}{% else %}Hayden McAfee's website, with information about Hayden and his work.{% endif %}">
         <title>
             {% if page.title %}
             Hayden / {{ page.title }}
