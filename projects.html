@@ -7,12 +7,12 @@ layout: default
         <h2><a href="{% link index.html %}">Hayden/</a></h2>
         <h1>Projects</h1>
     </header>
-    {% assign sorted_projects = site.projects | sort: 'year' | reverse %}
+    {% assign sorted_projects = site.projects | sort: 'date' | reverse %}
     {% for project in sorted_projects %}
         <article>
             <header>
                 <h1><a href="{{ project.url }}">{{ project.title }}</a></h1>
-                <time>{{ project.year }}</time>
+                <time>{{ project.date | date: "%Y" }}</time>
             </header>
             <p>{{ project.description }}</p>
         </article>

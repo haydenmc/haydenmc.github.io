@@ -1,7 +1,7 @@
 ---
 title: Roomie
 subtitle: Web Project
-year: 2013
+date: 2013-01-01
 description: Roomie was a slick web app designed to help room mates communicate and manage things like food and expenses.
 ---
 Roomie was my first foray into the world of single-page web-apps. It was also my
