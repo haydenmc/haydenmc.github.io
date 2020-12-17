@@ -15,8 +15,10 @@
 // Declare dark theme first, just in case browser doesn't support
 // prefers-color-scheme media query
 :root {
-    --background-color: rgba(8, 8, 8, 1);
-    --foreground-color: rgba(255, 255, 255, 1);
+    --background-rgb: 8, 8, 8;
+    --foreground-rgb: 255, 255, 255;
+    --background-color: rgb(var(--background-rgb));
+    --foreground-color: rgb(var(--foreground-rgb));
     --accent-hue: 200;
     --accent-color: hsl(var(--accent-hue), 100%, 60%);
     --table-padding: 16px;
@@ -25,8 +27,8 @@
 // LIGHT THEME
 @media (prefers-color-scheme: light) {
     :root {
-        --background-color: rgba(255, 255, 255, 1);
-        --foreground-color: rgba(8, 8, 8, 1);
+        --background-rgb: 255, 255, 255;
+        --foreground-rgb: 8, 8, 8;
         --accent-color: hsl(var(--accent-hue), 100%, 35%);
     }
 }
@@ -34,9 +36,8 @@
 // DARK THEME (default)
 @media (prefers-color-scheme: dark), (prefers-color-scheme:no-preference) {
     :root {
-        --background-color: rgba(8, 8, 8, 1);
-        --foreground-color: rgba(255, 255, 255, 1);
-        --accent-hue: 200;
+        --background-rgb: 8, 8, 8;
+        --foreground-rgb: 255, 255, 255;
         --accent-color: hsl(var(--accent-hue), 100%, 60%);
     }
 }
@@ -72,13 +73,20 @@ p {
     margin: 16px 0;
 }
 
+code {
+    font-family: 'Cascadia Code', monospace;
+
+    :not(pre) > & {
+        background-color: rgba(var(--foreground-rgb), 0.1);
+        padding: 2px 4px;
+    }
+}
+
 pre {
     overflow: auto;
     padding: 8px;
-}
-
-code {
-    font-family: 'Cascadia Code', monospace;
+    background-color: rgba(var(--foreground-rgb), 0.1);
+    border-left: 2px solid rgba(var(--foreground-rgb), 0.2);
 }
 
 body.out {
