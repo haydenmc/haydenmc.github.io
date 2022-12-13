@@ -6,7 +6,7 @@ layout: default
         <header>Hayden McAfee</header>
         <p>Hello, I'm Hayden!</p>
         <p>I love building all sorts of things, but I mainly create software.</p>
-        <p>Currently I am a Software Engineer working on Windows Devices at Microsoft.</p>
+        <p>Currently I am a Software Architect working on Automation Tooling at Ford.</p>
         <p>In my spare time I tend to work on many different side projects.</p>
     </section>
 
@@ -38,7 +38,8 @@ layout: default
     <section>
         <header>Work</header>
         <ul>
-            {% for work in site.work reversed limit: 3 %}
+            {% assign sorted_work = site.work | reverse %}
+            {% for work in sorted_work limit: 3 %}
             <li>
                 <header>
                     {% if work.icon %}
