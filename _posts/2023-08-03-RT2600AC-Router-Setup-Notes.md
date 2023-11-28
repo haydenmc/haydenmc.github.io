@@ -50,3 +50,9 @@ wiped during updates) and add it to `/etc/crontab` as follows:
 #minute hour    mday    month   wday    who     command
 0       */3     *       *       *       root    /volume1/my_scripts/update-hayden-house-ddns.sh
 ```
+
+Afterwards, just restart `crond` with the following command:
+
+```sh
+synoservicectl --restart crond
+```
