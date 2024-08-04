@@ -9,8 +9,10 @@ layout: default
     {% for post in site.posts %}
         <article>
             <header>
-                <h1><a href="{{ post.url }}">{{ post.title }}</a></h1>
-                <time>{{ post.date | date: "%Y-%m-%d" }}</time>
+                <div>
+                    <h1><a href="{{ post.url }}">{{ post.title }}</a></h1>
+                    <time>{{ post.date | date: "%Y-%m-%d" }}</time>
+                </div>
             </header>
             {{ post.excerpt }}
         </article>

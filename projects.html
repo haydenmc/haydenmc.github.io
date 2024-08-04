@@ -11,8 +11,13 @@ layout: default
     {% for project in sorted_projects %}
         <article>
             <header>
-                <h1><a href="{{ project.url }}">{{ project.title }}</a></h1>
-                <time>{{ project.date | date: "%Y" }}</time>
+                {% if project.icon %}
+                    {% include {{ project.icon | prepend: 'svg/' }} %}
+                {% endif %}
+                <div>
+                    <h1><a href="{{ project.url }}">{{ project.title }}</a></h1>
+                    <time>{{ project.date | date: "%Y" }}</time>
+                </div>
             </header>
             <p>{{ project.description }}</p>
         </article>
