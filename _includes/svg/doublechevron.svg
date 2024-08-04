@@ -1,0 +1,15 @@
+<svg
+    width="64"
+    height="64"
+    version="1.1"
+    xmlns="http://www.w3.org/2000/svg"
+    xmlns:svg="http://www.w3.org/2000/svg">
+    <g>
+        <path
+            style="fill:var(--foreground-color);stroke:none"
+            d="m 55.999998,32 -12,-20.000001 L 32,12 43.999998,32 32,51.999999 h 11.999998 z" />
+        <path
+            style="fill:var(--foreground-color);stroke:none"
+            d="M 33.999998,32 21.999999,12 H 10.000001 L 21.999998,32 10,51.999999 h 11.999998 z" />
+    </g>
+</svg>
