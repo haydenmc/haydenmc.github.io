@@ -47,7 +47,7 @@ function loadPage(url, shouldPushState = false, scrollPosition = 0)
 function onLinkClicked(event)
 {
     event.preventDefault();
-    var target = event.target;
+    var target = event.currentTarget;
     var link = target.href;
     loadPage(link, true);
 }

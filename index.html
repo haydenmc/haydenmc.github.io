@@ -5,9 +5,8 @@ layout: default
     <section>
         <header>Hayden McAfee</header>
         <p>Hello, I'm Hayden!</p>
-        <p>I love building all sorts of things, but I mainly create software.</p>
-        <p>Currently I am a Software Architect working on Automation Tooling at Ford.</p>
-        <p>In my spare time I tend to work on many different side projects.</p>
+        <p>I love learning and building all sorts of things, but I mainly create software.</p>
+        <p>Check out some of my work below!</p>
     </section>
 
     <section>
@@ -29,10 +28,13 @@ layout: default
                 <p>{{ project.description }}</p>
             </li>
             {% endfor %}
+            <li>
+                <a href="{% link projects.html %}">
+                    {% include svg/doublechevron.svg %}
+                    <div>All Projects</div>
+                </a>
+            </li>
         </ul>
-        {% if site.projects.size > 3 %}
-            <a href="{% link projects.html %}">all projects</a>
-        {% endif %}
     </section>
 
     <section>
@@ -54,10 +56,13 @@ layout: default
                 <p>{{ work.description }}</p>
             </li>
             {% endfor %}
+            <li>
+                <a href="{% link work.html %}">
+                    {% include svg/doublechevron.svg %}
+                    <div>All Work</div>
+                </a>
+            </li>
         </ul>
-        {% if site.work.size > 3 %}
-            <a href="{% link work.html %}">all work</a>
-        {% endif %}
     </section>
 
     <section>
@@ -70,9 +75,12 @@ layout: default
                     {{ post.excerpt }}
                 </li>
             {% endfor %}
+            <li>
+                <a href="{% link posts.html %}">
+                    {% include svg/doublechevron.svg %}
+                    <div>All Posts</div>
+                </a>
+            </li>
         </ul>
-        {% if site.posts.size > 3 %}
-            <a href="{% link posts.html %}">all posts</a>
-        {% endif %}
     </section>
 </main>
