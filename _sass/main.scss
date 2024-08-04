@@ -177,11 +177,12 @@ body {
                 > li {
                     display: block;
                     width: calc(100% - 32px);
+                    margin: 16px;
+
                     @media (min-width: 640px)
                     {
                         width: calc(33% - 32px);
                     }
-                    margin: 16px;
 
                     > header {
                         display: flex;
