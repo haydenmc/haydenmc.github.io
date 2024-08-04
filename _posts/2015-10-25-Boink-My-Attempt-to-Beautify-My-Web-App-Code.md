@@ -4,7 +4,7 @@ categories: [projects]
 ---
 ## My web apps tend to be a mess.
 
-Over the past few years, I've written a number of "single-page apps". [Purdue.io]({% link _projects/2015-Purdue-io.md %}), [Tunr]({% link _projects/2014-Tunr-io.md %}), [Roomie]({% link _projects/2013-Roomie.md %}), etc. As I never bothered to learn any of the hip new client-side SPA frameworks (Angular, Ember, etc), my first step was always to come up with a good way to manage the UI. In my haste to build an awesome app, I never put too much thought into crafting a nice way to manage how I was displaying information, or even architecting the app in the first place.
+Over the past few years, I've written a number of "single-page apps". [Purdue.io]({% link _projects/2014-Purdue-io.md %}), [Tunr]({% link _projects/2014-Tunr-io.md %}), [Roomie]({% link _projects/2014-Roomie.md %}), etc. As I never bothered to learn any of the hip new client-side SPA frameworks (Angular, Ember, etc), my first step was always to come up with a good way to manage the UI. In my haste to build an awesome app, I never put too much thought into crafting a nice way to manage how I was displaying information, or even architecting the app in the first place.
 
 The result was nightmarish spaghetti code. Extremely short-sighted hunks of code to apply this animation here, update this element here, insert these elements there, etc. Despite this, however, I'd receive praise for how beautiful and smooth the UI was. The code, despite being poorly conceived from a perspective of re-use and modularity, was very efficient at what it did: move elements of the DOM around to display what it needed to the user.
 
