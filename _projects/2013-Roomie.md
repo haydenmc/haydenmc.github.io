@@ -3,6 +3,7 @@ title: Roomie
 subtitle: Web Project
 date: 2013-01-01
 description: Roomie was a slick web app designed to help room mates communicate and manage things like food and expenses.
+icon: todo.svg
 ---
 Roomie was my first foray into the world of single-page web-apps. It was also my
 first time experimenting with the Microsoft web-stack (ASP.Net, TypeScript, etc.)
