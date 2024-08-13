@@ -1,7 +1,7 @@
 ---
 title: Tunr
 subtitle: Web Project
-date: 2014-01-01
+date: 2014-04-25
 description: Tunr was a cloud music service designed for those who want to keep ownership of their music files.
 icon: tunr.svg
 ---

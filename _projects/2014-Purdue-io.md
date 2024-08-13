@@ -1,7 +1,7 @@
 ---
 title: Purdue.io
 subtitle: Web Project
-date: 2015-01-01
+date: 2014-12-12
 description: Purdue.io provides a public API to access Purdue University's class scheduling system.
 icon: purdue-io.svg
 ---

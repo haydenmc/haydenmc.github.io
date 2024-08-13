@@ -1,7 +1,7 @@
 ---
 title: Roomie
 subtitle: Web Project
-date: 2013-01-01
+date: 2014-02-11
 description: Roomie was a slick web app designed to help room mates communicate and manage things like food and expenses.
 icon: todo.svg
 ---
