@@ -68,12 +68,6 @@ video {
     object-fit: scale-down;
 }
 
-time {
-    display: block;
-    font-size: $fontSizeSmall;
-    font-weight: 400;
-}
-
 p {
     line-height: 1.8;
     margin: 8px 0;
@@ -93,6 +87,11 @@ pre {
     padding: 8px;
     background-color: rgba(var(--foreground-rgb), 0.1);
     border-left: 2px solid rgba(var(--foreground-rgb), 0.2);
+}
+
+div.subtitle {
+    font-size: $fontSizeSmall;
+    font-weight: 400;
 }
 
 body.out {
@@ -194,6 +193,7 @@ body {
                     > header {
                         display: flex;
                         flex-direction: row;
+                        align-items: center;
 
                         > svg {
                             margin-right: 8px;

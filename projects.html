@@ -16,7 +16,11 @@ layout: default
                 {% endif %}
                 <div>
                     <h1><a href="{{ project.url }}">{{ project.title }}</a></h1>
-                    <time>{{ project.date | date: "%Y" }}</time>
+                    <div class="subtitle">
+                        <time>{% if project.dateIsApprox %}~{% endif %}{{ project.date | date: "%Y" }}</time>
+                        &nbsp;&mdash;&nbsp;
+                        {{ project.subtitle }}
+                    </div>
                 </div>
             </header>
             <p>{{ project.description }}</p>
