@@ -16,7 +16,8 @@ and I desperately wanted to understand how I could make my own.
 I asked some adults who told me BASIC was a great way to learn how to program.
 So I went in search of a way to write my own BASIC programs.
 
-A web search led me to a tool called [Liberty Basic](https://en.wikipedia.org/wiki/Liberty_BASIC).
+A web search led me to a tool called
+[Liberty Basic](https://en.wikipedia.org/wiki/Liberty_BASIC).
 
 Liberty Basic provided an easy way to write BASIC on Windows. It had a simple
 IDE, extensive documentation, and plenty of examples to learn from.
@@ -28,6 +29,6 @@ adventures.
 
 ![Screenshot of a guessing game that I wrote](/assets/images/projects/2000-liberty-basic-guessing-game.png)
 
-I eventually discovered The Games Factory and
-[Game Maker]({% link _projects/2003-Game-Maker-Games.md %}), which made writing games a
-lot easier.
+I eventually discovered other tools like The Games Factory and
+[Game Maker]({% link _projects/2003-Game-Maker-Games.md %}), which made writing
+games a lot easier.
