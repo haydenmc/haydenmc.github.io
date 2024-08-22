@@ -7,26 +7,42 @@ description: Krypton Construct was a mod for the multiplayer shooter Tribes 2 th
 icon: krypton.svg
 ---
 
-Tribes 2 was a multiplayer team-based first person shooter game released in
-2001.
+Krypton Construct was a mod for
+[Tribes 2](https://en.wikipedia.org/wiki/Tribes_2), a multiplayer team-based
+first person shooter game released in 2001.
+
+![Tribes 2 box art](/assets/images/projects/2007-tribes-2-box-art.png)
 
 In addition to truly awesome gameplay and groundbreaking connectivity
 features, the game was also incredibly extensible, giving players free access
-to the scripting language and map editor tools used to craft gameplay on top of
+to the scripting language and map editing tools used to craft gameplay on top of
 the game's engine.
 
 A sizeable community of modders and scripters grew around the game along with
 a diverse set of tools and mods, many offering substantially different gameplay
-than the base game offered.
+than the base game offered. Modders would share their creations with one
+another, along with tips, tutorials, and tools.
 
-One such mod was called Construction Mod. This mod provided players with in-game
-tools that could be used to create custom structures and experiences, offering
-the same type of creative play that games like Minecraft would specialize in
-years later.
+In addition to empowering me to create my own Tribes 2 mods, the community also
+provided me with resources to learn basic programming in a fun and rewarding
+setting.
 
-Many flavors of Construction Mod were available in the game's heyday, offering
-different sets of unique features. I decided to write my own and called it
-"Krypton Construct".
+# Construction Mods
+
+Many mods added the ability for players to summon and manipulate in-game
+objects. Creative players were able to use these features to create interesting
+structures and mechanisms. Eventually, mods began to focus more on creative
+gameplay, and an entire category of Construction Mods emerged.
+
+With fairly advanced tools and a strong community, these mods provided the
+same type of creative experience that games like Garry's Mod, Minecraft, and
+Roblox would popularize years later.
+
+After playing many flavors of Construction Mod and thinking up a bunch of
+features I wanted for myself, I decided to write my own Construction Mod and
+called it "**Krypton Construct**".
+
+<video src="/assets/images/projects/2007-tribes-krypton-construction-demo.mp4" controls></video>
 
 Krypton had a bunch of cool features - some original, and others inspired by
 other popular mods.
@@ -49,7 +65,8 @@ other popular mods.
 I made the source code for Krypton Construct available on GitHub
 [here](https://github.com/haydenmc/Krypton).
 
-The engine powering Tribes 2 evolved into the Torque Game Engine and was
+The engine powering Tribes 2 evolved into the
+[Torque Game Engine](https://en.wikipedia.org/wiki/Torque_(game_engine)) and was
 eventually made available to game developers under a paid license. Years later
 the engine was 
 [open sourced](https://github.com/TorqueGameEngines/Torque3D) and provided to
