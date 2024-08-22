@@ -102,6 +102,10 @@ the service is no longer online).
 
 <video src="/assets/images/projects/2003-meteor-shower-game.mp4" controls></video>
 
+_Screenshot of the online high score board back when it still functioned:_
+
+![Screenshot of Meteor Shower online high score board](/assets/images/projects/2003-meteor-shower-high-scores.png)
+
 # Zombie Shooter Prototype
 
 *Circa 10th grade*

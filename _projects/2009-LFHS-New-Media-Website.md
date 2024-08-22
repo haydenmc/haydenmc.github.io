@@ -21,6 +21,12 @@ I created a web app to provide a place for students to upload and share videos
 while providing instructors with the tools to control permissions and manage
 uploaded content.
 
+The original site looked like this:
+
+![LFHSTele.com original page template before facelift](/assets/images/projects/2009-lfhsnewmedia-original-site.png)
+
+But a year or two later I completed a redesign:
+
 ![LFHSNewMedia.com landing page with search sidebar](/assets/images/projects/2009-lfhsnewmedia-landing-search.jpg)
 
 The site was written in the "LAMP" (Linux, Apache, MySQL, PHP) stack that was

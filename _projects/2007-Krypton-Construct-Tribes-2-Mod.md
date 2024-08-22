@@ -47,7 +47,7 @@ called it "**Krypton Construct**".
 Krypton had a bunch of cool features - some original, and others inspired by
 other popular mods.
 
-## Notable Features
+# Notable Features
 
  - A personal save system, allowing players to persist their creations across
    play sessions.
@@ -71,3 +71,31 @@ eventually made available to game developers under a paid license. Years later
 the engine was 
 [open sourced](https://github.com/TorqueGameEngines/Torque3D) and provided to
 all users for free.
+
+# Old Screenshots
+
+_A counting machine built by a player that leveraged the mod's switches,
+teleports, and power system to increment a number counter._
+
+![Screenshot of a device built by a player in-game that would count upwards](/assets/images/projects/2007-krypton-counting-device.png)
+
+_A nearly real-time clock built by the same player._
+
+![Screenshot of a (nearly) real-time clock built by a user in-game](/assets/images/projects/2007-krypton-clock.png)
+
+_An "Ol' Kentucky Home" built by another player._
+
+![Screenshot of an Old Kentucky Home built by a player in-game](/assets/images/projects/2007-krypton-kentucky-home.png)
+
+_A combat arena built by a player._
+
+![Screenshot of a combat arena built by a player in-game](/assets/images/projects/2007-krypton-stadium.png)
+
+_A tower built by me._
+
+![Screenshot of a tower built by a player in-game](/assets/images/projects/2007-krypton-tower.png)
+
+_A group of players exploring the boundaries of the infinite map to try to
+break the game._
+
+![Screenshot of players posing together in-game](/assets/images/projects/2007-krypton-players.png)
