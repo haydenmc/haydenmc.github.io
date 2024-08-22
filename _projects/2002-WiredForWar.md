@@ -35,8 +35,8 @@ The forum was established around 2002 and ran on
 forum was shut down and archived and a new instance of
 [NodeBB](https://nodebb.org/) took its place.
 
-I still maintain the today; it serves as a searchable entrypoint to Machines
-resources, but most conversations have moved to the
+I still maintain the site today; it serves as a searchable entrypoint to
+Machines resources, but most conversations have moved to the
 [WiredForWar Discord](https://discord.gg/J6e9MsY).
 
 Notably, in 2020, the source code to Machines was uncovered, and the rights to
