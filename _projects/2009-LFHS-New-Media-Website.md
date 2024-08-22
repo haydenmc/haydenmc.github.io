@@ -1,7 +1,7 @@
 ---
 title: LFHS New Media Website
 subtitle: Web
-date: 2010-01-01
+date: 2009-01-01
 dateIsApprox: true
 description: In high school I developed a web portal where students in the New Media class could upload and share their projects.
 icon: lfhsnewmedia.svg
@@ -20,6 +20,8 @@ with the community was a difficult chore.
 I created a web app to provide a place for students to upload and share videos
 while providing instructors with the tools to control permissions and manage
 uploaded content.
+
+![LFHSNewMedia.com landing page with search sidebar](/assets/images/projects/2009-lfhsnewmedia-landing-search.jpg)
 
 The site was written in the "LAMP" (Linux, Apache, MySQL, PHP) stack that was
 fairly popular at the time. It was hosted on Amazon AWS EC2 and leveraged S3
@@ -48,3 +50,9 @@ After over a decade of service it was finally retired in 2022.
 
 The source code is available
 [on GitHub](https://github.com/LFHSNewMedia/Legacy-LFHSNewMedia.com).
+
+### Video Metadata Sidebar
+![UI used to edit video metadata, including the assigned tags](/assets/images/projects/2009-lfhsnewmedia-tag-editor.jpg)
+
+### Video Poster Editor
+![UI used to edit video thumbnails and posters](/assets/images/projects/2009-lfhsnewmedia-poster-editor.jpg)
