@@ -69,10 +69,10 @@ video {
 
 p {
     line-height: 1.8;
-    margin: 8px 0;
+    margin: 16px 0;
 }
 
-ul > li {
+ul > li, ol > li {
     line-height: 1.8;
 }
 
@@ -197,6 +197,7 @@ body {
                         display: flex;
                         flex-direction: row;
                         align-items: center;
+                        line-height: normal;
 
                         > svg {
                             margin-right: 8px;
@@ -211,6 +212,10 @@ body {
                                 }
                             }
                         }
+                    }
+
+                    > p {
+                        margin: 4px 0;
                     }
                 }
 
@@ -261,6 +266,10 @@ body {
                     font-size: 24px;
                     font-weight: 700;
                 }
+            }
+
+            > p {
+                margin: 4px 0;
             }
 
             &:not(:last-child)
