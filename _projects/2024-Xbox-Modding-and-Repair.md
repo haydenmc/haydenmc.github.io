@@ -13,8 +13,7 @@ _really_ wanted to play Halo after being introduced to it by a friend.
 
 A little while later, [Kevin Rose](https://en.wikipedia.org/wiki/Kevin_Rose)
 showed up on [TechTV](https://en.wikipedia.org/wiki/TechTV) and taught me that
-they could be modded and made to run custom software. Amazingly, I was able to
-find the actual segment on YouTube.
+they could be modded and made to run custom software.
 
 <iframe
     src="https://www.youtube.com/embed/oR6D0CdCKPQ"
@@ -24,6 +23,35 @@ find the actual segment on YouTube.
     referrerpolicy="strict-origin-when-cross-origin"
     allowfullscreen>
 </iframe>
+
+# Unleashing the Xbox
+
+The Xbox was a unique console in that it was very similar to a desktop PC of the
+era.
+
+It ran on an x86 processor, used USB to connect controllers and accessories,
+featured an Ethernet port for network connectivity, and came equipped with an
+internal hard drive for storage.
+
+Though it was a perfectly capable gaming machine, there was a lot more potential
+hiding behind Microsoft's security measures. Once circumvented, a flood of
+amazing software and functionality became available:
+
+ - Loading media and software to the internal hard disk (which could also be
+   upgraded to a larger capacity)
+ - Running homebrew games and apps built by the community
+ - Running emulators to play arcade games or games from other consoles
+ - Playing movies and music from the DVD drive, the hard drive, or streamed over
+   the network
+ - Running a full Linux desktop operating system
+
+_This is XBMC (Xbox Media Center), originally built for the Xbox, but later
+becoming available on a variety of operating systems and renamed to
+[Kodi](https://kodi.tv/):_
+
+![Screenshot of Xbox Media Center](/assets/images/projects/2024-xbox-modding-xbmc.jpg)
+
+# My First Mod
 
 Inspired, I went on the internet, ordered myself an Xecuter 3 modchip, and
 struggled for multiple days to solder it in place before finally seeing the X3
@@ -50,8 +78,8 @@ and greatest offered by the community.
 # Assembling My Own Mod Chips
 
 For some reason I also decided that this was a great opportunity to improve my
-soldering skills. So instead of ordering a pre-assembled modchip, I ordered some
-unpopulated PCBs and components to assemble the open-source
+soldering skills. So, instead of ordering a pre-assembled modchip, I ordered
+some unpopulated PCBs and components to assemble the open-source
 [OpenXenium](https://github.com/Xbox-Preservation-Project/OpenXenium) mod chip
 myself.
 
