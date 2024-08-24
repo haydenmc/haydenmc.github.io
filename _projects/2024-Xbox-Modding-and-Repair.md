@@ -24,7 +24,7 @@ they could be modded and made to run custom software.
     allowfullscreen>
 </iframe>
 
-# Unleashing the Xbox
+# Unleashing The Xbox
 
 The Xbox was a unique console in that it was very similar to a desktop PC of the
 era.
