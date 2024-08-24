@@ -46,6 +46,11 @@ ESP32 to act as a remote control.
 
 ![Protoboard with LED components and enclosure](/assets/images/projects/2024-home-automation-air-conditioner.webp)
 
+_Here's a demo of setting the temperature of the air conditioner via Home
+Assistant:_
+
+<video src="/assets/images/projects/2024-home-automation-air-conditioner-demo.mp4" controls></video>
+
 # Automated Plant Watering
 
 _TODO_

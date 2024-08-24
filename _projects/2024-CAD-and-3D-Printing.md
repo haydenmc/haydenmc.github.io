@@ -46,7 +46,7 @@ I made a little device that holds the Wii sensor bar underneath my TV.
 
 I made a little physical QR code card for folks to join my home's guest Wi-Fi.
 
-![FreeCAD model of WiFi card](/assets/images/projects/2024-cad-wifi-card-design.webp)
+![FreeCAD model of Wi-Fi card](/assets/images/projects/2024-cad-wifi-card-design.webp)
 
 ![Physical printed Wi-Fi card](/assets/images/projects/2024-cad-wifi-card-printed.webp)
 
