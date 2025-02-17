@@ -3,6 +3,12 @@ title: "Running Frigate on Port 443"
 categories: [notes]
 ---
 
+_**2025-02-16 Edit:** I no longer recommend the approach I outlined below.
+It breaks some internal API calls that Frigate makes to itself.
+It's best to just use the service as it's officially supported with a reverse proxy._
+
+---
+
 I recently started setting up [Frigate](https://frigate.video/) for my family
 to use for security camera recording on a Synology Diskstation NAS.
 
