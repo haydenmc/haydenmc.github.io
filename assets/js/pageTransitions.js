@@ -44,13 +44,8 @@ function loadPage(url, shouldPushState = false, scrollPosition = 0)
 
             // Count as pageview in analytics
             try {
-                if (window.goatcounter && window.goatcounter.count) {
-                    window.goatcounter.count({
-                        path: url,
-                    });
-                }
+                window.goatcounter?.count();
             } catch (e) {
-                // Silently ignore analytics errors
                 console.warn('GoatCounter tracking failed:', e);
             }
         });
