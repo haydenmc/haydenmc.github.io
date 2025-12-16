@@ -1,0 +1,10 @@
+services:
+  jekyll:
+    build: .
+    ports:
+      - "4000:4000"    # Jekyll server
+      - "35729:35729"  # LiveReload
+    volumes:
+      - .:/site:Z
+    environment:
+      - JEKYLL_ENV=development
