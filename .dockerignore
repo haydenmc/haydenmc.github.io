@@ -1,0 +1,11 @@
+.git
+.github
+_site
+.sass-cache
+.jekyll-cache
+.jekyll-metadata
+node_modules
+*.swp
+*.swo
+*~
+.DS_Store

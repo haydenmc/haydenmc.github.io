@@ -11,3 +11,9 @@ This is my website. 😊
 `bundle update --bundler` to update the bundler version.
 
 `bundle exec jekyll serve` to build + start server.
+
+### Docker
+
+`docker build -t jekyll-site .`
+
+`docker run --rm -p 4000:4000 -v .:/site:Z jekyll-site`
