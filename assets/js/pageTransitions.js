@@ -41,6 +41,18 @@ function loadPage(url, shouldPushState = false, scrollPosition = 0)
             {
                 completeUpdate();
             }
+
+            // Count as pageview in analytics
+            try {
+                if (window.goatcounter && window.goatcounter.count) {
+                    window.goatcounter.count({
+                        path: url,
+                    });
+                }
+            } catch (e) {
+                // Silently ignore analytics errors
+                console.warn('GoatCounter tracking failed:', e);
+            }
         });
 }
 
