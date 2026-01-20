@@ -9,6 +9,7 @@ gem "jekyll"
 # Avoids warnings about loading from standard library
 gem "csv"
 gem "base64"
+gem "logger"
 
 # Required for Windows file monitoring
 # REMOVED until https://github.com/Maher4Ever/wdm/issues/27 is resolved.
