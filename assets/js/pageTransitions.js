@@ -23,7 +23,7 @@ function loadPage(url, shouldPushState = false, scrollPosition = 0)
             // Wait for transition to finish if we're too early
             var completeUpdate = () => {
                 // Only replace body and update title (don't re-run scripts or CSS)
-                document.body.replaceWith(newDoc.body);
+                document.body.innerHTML = newDoc.body.innerHTML;
                 hookLinks();
                 window.scroll(0, scrollPosition);
 
