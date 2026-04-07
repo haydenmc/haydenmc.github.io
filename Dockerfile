@@ -25,5 +25,5 @@ COPY . .
 # Expose Jekyll's default port
 EXPOSE 4000
 
-# Run Jekyll server with live reload and incremental builds
-CMD ["bundle", "exec", "jekyll", "serve", "--host", "0.0.0.0", "--livereload", "--incremental", "--drafts"]
+# Run Jekyll server with live reload
+CMD ["bundle", "exec", "jekyll", "serve", "--host", "0.0.0.0", "--drafts", "--force_polling"]
