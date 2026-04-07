@@ -19,7 +19,7 @@ environment.
         alt="Ford F-150 Lightning, E-Transit, Mustang Mach-E" />
     <figcaption>
         When I joined in 2022 Ford had just started shipping their new EV lineup with the
-        Lightning, Mustang Mach-E, and E-Transit.
+        F-150 Lightning, Mustang Mach-E, and E-Transit.
     </figcaption>
 </figure>
 
@@ -50,13 +50,44 @@ eventually (with an update) providing Bluecruise hands-free self-driving.
 
 # My Role
 
+I joined Ford's testing organization, eventually re-branded to "Verification & Validation."
 
+My role was to help improve Ford's automated testing of software components by providing tools,
+frameworks, and guidance to the teams responsible for testing both in-house Ford software as
+well as software that delivered to Ford by suppliers.
+
+My team maintained a set of libraries and frameworks called "TAT" - "Test Automation Tools."
+TAT's lineage traces back to BlackBerry, and helps abstract away things like CAN bus,
+test environment configuration, logging, results reporting, etc. so that teams can focus
+on writing tests and diagnostics tools.
+
+Along with TAT, my team also managed the infrastructure that ran tests during pull requests,
+defending Ford's codebase against changes that would introduce defects. This involved maintaining
+a sizable lab of physical ECUs, and maintaining tooling that orchestrates the deployment
+and execution of tests for every pull request.
+
+A significant challenge for Ford is extending this style of fully automated testing to
+their HiL (hardware-in-the-loop) labs. HiL labs wire together larger systems of physical ECUs
+to simulate portions of a full vehicle in order to catch issues that may only occur in a system
+environment.
+
+Traditionally, the HiL labs relied mostly on manual or semi-automated testing, where test steps
+are documented in a test management system, and a human executes and verifies the result of
+each step. TAT, in combination with new AI-enabled test tooling, is being leveraged to help
+turn existing semi-manual test cases into fully automated test scripts that can be dynamically
+executed against standard HiL benches, similar to how pre-submit manages testing at the ECU level.
+
+My team also enhanced traceability at Ford, building a system that synchronized data from the
+various tools used for requirements, work tracking, release tracking, and test tracking.
+With one uniform data model, we could generate reports that traced requirements through
+implementation to test results, and determine the quality level of a particular software release,
+and whether we had sufficient test coverage of the original requirements.
 
 # My Experience in Photos
 
 I was fortunate enough to have Ford fly me to several of their offices across North America
 for an in-person introduction to my colleagues and the various development, manufacturing, and
-testing facilities.
+testing facilities. Here are some photos of those experiences!
 
 <figure>
     <img src="/assets/images/work/2022-ford-lightning-frunkie.jpg"
@@ -87,5 +118,39 @@ testing facilities.
     <figcaption>
         The inside of a partially assembled Mustang Mach-E during my tour of the Ford Cuautitlán
         Stamping and Assembly Plant (CSAP).
+    </figcaption>
+</figure>
+
+<figure>
+    <img src="/assets/images/work/2022-ford-flashing-mach-e-in-garage.jpg"
+        alt="A Mach-E in my garage with the frunk disassembled" />
+    <figcaption>
+        Flashing new software onto a test vehicle in my garage, before Ford had officially
+        established an office in our region.
+    </figcaption>
+</figure>
+
+<figure>
+    <img src="/assets/images/work/2022-ford-test-equipment.jpg"
+        alt="Ford test benches and vehicle testing hardware in the Seattle office" />
+    <figcaption>
+        The first test benches and vehicle testing hardware arrive in the brand new Seattle office!
+    </figcaption>
+</figure>
+
+<figure>
+    <img src="/assets/images/work/2022-ford-buddys-pizza.jpg"
+        alt="A close-up of Buddy's Detroit-style pizza" />
+    <figcaption>
+        I was introduced to Detroit-style pizza at Buddy's in Dearborn. Delicious!
+    </figcaption>
+</figure>
+
+<figure>
+    <img src="/assets/images/work/2022-ford-ottawa-poutine.jpg"
+        alt="An Ottawa Senators hockey game with poutine in my hand" />
+    <figcaption>
+        Pretending I'm Canadian during my visit to the Ottawa office by watching an Ottawa Senators
+        hockey game while enjoying some poutine.
     </figcaption>
 </figure>
