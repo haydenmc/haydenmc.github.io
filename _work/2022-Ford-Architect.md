@@ -154,3 +154,13 @@ testing facilities. Here are some photos of those experiences!
         hockey game while enjoying some poutine.
     </figcaption>
 </figure>
+
+<figure>
+    <img src="/assets/images/work/2022-ford-mach-e-rally.jpg"
+        alt="A bright yellow Mustang Mach-E Rally" />
+    <figcaption>
+        The craziest car I've ever had the privilege to drive: A "grabber yellow" Mustang Mach-E
+        Rally edition. The Ford Management Lease program allowed me to drive a fancy new Ford
+        vehicle every year.
+    </figcaption>
+</figure>
