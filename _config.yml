@@ -24,7 +24,7 @@ defaults:
       path: ""
       type: "recipes"
     values:
-      layout: "recipes"
+      layout: "recipe"
   - scope:
       path: ""
       type: "posts"
