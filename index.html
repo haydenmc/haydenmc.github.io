@@ -10,7 +10,7 @@ layout: default
     </section>
 
     <section>
-        <header>Projects</header>
+        <header>Projects <a href="{% link projects.html %}">Show All &raquo;</a></header>
         <ul>
             {% assign sorted_projects = site.projects | sort: 'date' | reverse %}
             {% for project in sorted_projects limit: 3 %}
@@ -28,17 +28,11 @@ layout: default
                 <p>{{ project.description }}</p>
             </li>
             {% endfor %}
-            <li>
-                <a href="{% link projects.html %}">
-                    {% include svg/doublechevron.svg %}
-                    <div>All Projects</div>
-                </a>
-            </li>
         </ul>
     </section>
 
     <section>
-        <header>Work</header>
+        <header>Work <a href="{% link work.html %}">Show All &raquo;</a></header>
         <ul>
             {% assign sorted_work = site.work | reverse %}
             {% for work in sorted_work limit: 3 %}
@@ -56,17 +50,11 @@ layout: default
                 <p>{{ work.description }}</p>
             </li>
             {% endfor %}
-            <li>
-                <a href="{% link work.html %}">
-                    {% include svg/doublechevron.svg %}
-                    <div>All Work</div>
-                </a>
-            </li>
         </ul>
     </section>
 
     <section>
-        <header>Posts</header>
+        <header>Posts <a href="{% link posts.html %}">All Posts &raquo;</a></header>
         <ul>
             {% for post in site.posts limit: 3 %}
                 <li>
@@ -77,12 +65,6 @@ layout: default
                     {{ post.excerpt }}
                 </li>
             {% endfor %}
-            <li>
-                <a href="{% link posts.html %}">
-                    {% include svg/doublechevron.svg %}
-                    <div>All Posts</div>
-                </a>
-            </li>
         </ul>
     </section>
 </main>

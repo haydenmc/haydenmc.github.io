@@ -182,6 +182,11 @@ body {
             > header {
                 font-size: $fontSizeLarge;
                 font-weight: 700;
+
+                > a {
+                    margin-left: 8px;
+                    font-size: $fontSizeNormal;
+                }
             }
 
             > ul {
@@ -229,32 +234,6 @@ body {
 
                     > p {
                         margin: 4px 0;
-                    }
-                }
-
-                > li:last-child {
-                    display: flex;
-                    align-items: center;
-
-                    @media (min-width: $mobileBreakpoint)
-                    {
-                        width: calc(13% - 32px);
-                    }
-
-                    a {
-                        display: flex;
-                        flex-grow: 1;
-                        height: 100%;
-                        align-items: center;
-                        justify-content: center;
-                        text-align: center;
-                        font-size: 22px;
-                        flex-direction: column;
-
-                        @media (max-width: $mobileBreakpoint)
-                        {
-                            flex-direction: row-reverse;
-                        }
                     }
                 }
             }
