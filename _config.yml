@@ -6,6 +6,9 @@ collections:
   work:
     output: true
     permalink: /:collection/:name:output_ext
+  recipes:
+    output: true
+    permalink: /:collection/:name:output_ext
 defaults:
   - scope:
       path: ""
@@ -17,6 +20,11 @@ defaults:
       type: "work"
     values:
       layout: "work"
+  - scope:
+      path: ""
+      type: "recipes"
+    values:
+      layout: "recipes"
   - scope:
       path: ""
       type: "posts"
