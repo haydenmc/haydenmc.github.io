@@ -27,7 +27,8 @@ $mobileBreakpoint: 800px;
     --foreground-color: rgb(var(--foreground-rgb));
     --accent-hue: 200;
     --accent-color: hsl(var(--accent-hue), 100%, 60%);
-    --table-padding: 16px;
+    --table-padding: 12px;
+    --table-border-color: color-mix(in srgb, var(--foreground-color) 20%, var(--background-color));
 }
 
 // LIGHT THEME
@@ -273,7 +274,19 @@ body {
 }
 
 table {
+    border-collapse: collapse;
+
+    & > thead > tr {
+        th {
+            
+            &:not(:first-child) {
+                border-left: 1px solid var(--table-border-color);
+            }
+        }
+    }
+
     & > thead > tr, & > tbody > tr {
+        border-bottom: 1px solid var(--table-border-color);
         th:first-child, td:first-child {
             padding: var(--table-padding) var(--table-padding) var(--table-padding) 0;
         }
